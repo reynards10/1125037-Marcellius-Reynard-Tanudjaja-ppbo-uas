@@ -1,6 +1,4 @@
-package Controller;
-
-import Model.GObject;
+package Model;
 
 public class GObjectForm<T extends GObject> {
 
