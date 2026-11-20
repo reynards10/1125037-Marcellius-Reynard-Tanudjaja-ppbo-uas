@@ -1,5 +1,7 @@
 package Model;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class Kubus extends Object3D{
     private double sisi;
 
@@ -27,4 +29,5 @@ public class Kubus extends Object3D{
     public String getValueKeyDetails() {
         return "[Segi Empat , "+hitungLuasPermukaan();
     }
+
 }
