@@ -4,7 +4,6 @@ public class Persegi extends Object2D {
     private double sisi;
 
     public Persegi(double sisi) {
-        super(this);
         this.sisi = sisi;
     }
 
@@ -12,11 +11,20 @@ public class Persegi extends Object2D {
         return sisi;
     }
 
-    public void setSisi() {
+    public void setSisi(double sisi) {
         this.sisi = sisi;
     }
 
-    public abstract double hitungLuas();
-    public abstract double hitungKeliling();
-    public abstract String getValueKeyDetails();
+    @Override
+    public double hitungLuas() {
+        return sisi * sisi;
+    }
+    @Override
+    public double hitungKeliling() {
+        return 4 * sisi;
+    }
+    @Override 
+    public String getValueKeyDetails() {
+        return "[Persegi , "+hitungLuas();
+    }
 }
